@@ -37,7 +37,7 @@ amount_entry = Entry(window, width=20)
 amount_entry.pack()
 
 # 결과 출력
-result_label = Label(window, text="", fg="green", font=("Arial", 12))
+result_label = Label(window, text="")
 result_label.pack(pady=10)
 
 # 계산 버튼 기능
