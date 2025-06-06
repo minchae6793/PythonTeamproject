@@ -7,7 +7,7 @@ from logic import find_currency_rate, calculate
 window = Tk()
 window.title("환율 계산기")
 window.geometry("400x450")
-window.resizable(width=False, height=False)
+window.resizable(width=True, height=True)
 
 # 통화 코드 리스트
 currency_codes = [
@@ -37,8 +37,10 @@ amount_entry = Entry(window, width=20)
 amount_entry.pack()
 
 # 결과 출력
-result_label = Label(window, text="")
-result_label.pack(pady=10)
+result_label1 = Label(window, text="환전되었습니다.", fg="black")
+result_label2= Label(window, text="환전금액: ", wraplength=380, justify=LEFT)
+result_label1.pack(pady=(200,0))
+result_label2.pack(pady=(0,200))
 
 # 계산 버튼 기능
 def on_calculate():
